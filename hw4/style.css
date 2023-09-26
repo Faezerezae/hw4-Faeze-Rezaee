@@ -2,40 +2,40 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 .one {
   width: 100%;
-  height: 250px;
-  background-color: rgba(0, 0, 0, 0.616);
+  height: 280px;
+  background-color: rgb(51, 51, 51);
   color: white;
   display: block;
   text-align: center;
-
-  padding: 30px;
+  padding: 50px;
 }
 
-.pd {
+.pd-one {
   padding: 10px;
 }
 
-.br {
-  border: 1px solid white;
-  width: 100px;
-  margin: 0 auto;
+.shadow {
+  box-shadow: 0 0 2px white;
+  width: 110px;
+  margin: 10px auto;
 }
 
 .two {
   width: 100%;
   height: 150px;
-  background-color: rgba(0, 0, 0, 0.068);
+  background-color: rgb(234, 234, 234);
   color: black;
   display: block;
   text-align: center;
   padding: 30px;
 }
 
-.flex-two {
+.childs-two {
   display: flex;
   font-size: 16px;
   margin: 12px;
@@ -45,10 +45,13 @@
 }
 
 .three {
-  padding: 10px;
-  height: 260px;
+  padding: 15px;
+  height: 270px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.616);
+  background-color:rgb(51, 51, 51);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex-three {
@@ -57,10 +60,9 @@
   align-items: center;
   text-align: center;
   gap: 15px;
-  padding: 10px;
 }
 
-.bgcw {
+.Childs-three {
   background-color: white;
   height: 230px;
   display: flex;
@@ -68,19 +70,20 @@
   align-items: center;
   text-align: center;
   flex-direction: column;
-  padding: 10px;
-  width: 210px;
-  font-size: 14px;
-}
-h3 {
   padding: 20px;
+  width: 240px;
+  font-size: 14px;
+  gap: 20px;
 }
+/* h3 {
+  padding: 20px;
+} */
 
 .four {
   background-color: white;
   width: 100%;
-  height: 150px;
-  margin: 20px auto;
+  height: 100px;
+  margin: 50px auto;
   text-align: center;
 }
 
@@ -88,34 +91,44 @@ h3 {
   display: flex;
   color: white;
   text-align: center;
-  height: 170px;
+  height: 200px;
   width: 100%;
 }
-.five-clblue {
-  background-color: rgba(12, 133, 194, 0.79);
+.five-bclblue {
+  background-color:rgb(38, 144, 212);
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 20px;
+  padding: 30px 1px;
   width: 50%;
 }
 
-.five-clgray {
-  background-color: rgba(0, 0, 0, 0.616);
+.five-bclblue p{
+  font-size: 1rem;
+}
+.five-bclgray {
+  background-color: rgb(51, 51, 51);
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 20px;
+  padding: 30px 1px;
   width: 50%;
 }
+
+.five-bclgray p{
+  font-size: 1rem;
+}
+
 .six {
   display: flex;
   background-color: black;
-  color: white;
+  color: rgb(188, 188, 188);
   height: 50px;
   justify-content: space-around;
   align-items: center;
 }
-#cl-span {
-  color: blue;
+
+#sdo-elm::after{
+content: "Traversy Media" ;
+color: blue;
 }
