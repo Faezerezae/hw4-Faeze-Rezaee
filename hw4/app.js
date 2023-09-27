@@ -1,22 +1,16 @@
 //You are given an array of integers having both negative and positive values, except for one integer which can be negative or positive. Create a function to find out that integer.
 
-// Loop through the array and XOR each integer with the result
-// for (let i = 0; i < arr.length; i++) {
-//   lonelyInteger ^= arr[i];
-// }
-
+// // Example usage
 function findLonelyInteger(arr) {
-  let lonelyInteger = arr.reduce((a, b) => a ^ b);
-  return lonelyInteger;
+  return arr.filter((item)=>{
+    return !arr.includes(-(item))
+  })
 }
-// Example usage
-let arr = [-9, -105, -9, -9, -9, -9, 105];
-let lonelyInteger = findLonelyInteger(arr);
-console.log(lonelyInteger); // Output: -6
-
+let arr = [-3, 1, 2, 3, -1, -4, -2]
+console.log(findLonelyInteger(arr));
+//-------------------------------------------------------------
 //question2
 //create a function named countCharacters that accepts two parameters, a character and a string. It should return the number of times the character is present in the string.
-
 function countCharacters(char, str) {
   let count = 0;
   let arr = str.split(""); // تبدیل رشته به آرایه از کاراکترها
@@ -84,11 +78,11 @@ if (daysInMonth == -1) {
 //question4
 //حلقه های تو در تویی برای الگوریتم مرتب سازی حبابی در جاوا اسکریپت استفاده می شود. در هر دور از حلقه، دو عنصر مجاور در آرایه بررسی می شوند و در صورتی که اولی بزرگتر از دومی باشد، جای آنها عوض می شود. این عملیات تا زمانی ادامه می یابد که دیگر هیچ جفتی از عناصری که باید جابجا شوند وجود نداشته باشد.
 function bubbleSort(arr) {
-  var len = arr.length;
-  for (var i = 0; i < len; i++) {
-    for (var j = 0; j < len - 1; j++) {
+  const len = arr.length;
+  for (let i = 0; i < len; i++) {
+    for (let j = 0; j < len - 1; j++) {
       if (arr[j] > arr[j + 1]) {
-        var temp = arr[j];
+        const temp = arr[j];
         arr[j] = arr[j + 1];
         arr[j + 1] = temp;
       }
